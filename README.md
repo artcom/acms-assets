@@ -1,7 +1,7 @@
-# Git JSON CMS asset server
+# Acms assets
 Basic WebDAV server based on Apache httpd server.
 
 ## Usage
 ```bash
-docker run artcom/git-json-cms-asset-server
+docker run artcom/acms-assets
 ```
