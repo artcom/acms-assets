@@ -8,22 +8,13 @@ Basic WebDAV server based on Apache httpd server.
 
 ```bash
 docker build -t artcom/acms-assets .
-docker run -d -p 80:80 --name acms-assets artcom/acms-assets
+docker run -d -p 80:80 --name artcom/acms-assets artcom/acms-assets
 ```
 
 **Create Directorty and run container:**
 
 ```bash
 curl -X MKCOL http://localhost:80/catPictures
-```
-
-**Test Headers:**
-
-```bash
-curl -I -X OPTIONS \
-  -H "Access-Control-Request-Method: MKCOL" \
-  -H "Origin: http://localhost:5173" \
-  http://localhost:80/catPictures
 ```
 
 **Upload image:**
